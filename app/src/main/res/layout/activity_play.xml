@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    tools:context=".PlayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/life0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:contentDescription="@string/life" />
+
+            <ImageView
+                android:id="@+id/life1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:contentDescription="@string/life" />
+
+            <ImageView
+                android:id="@+id/life2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:contentDescription="@string/life" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:shadowColor="@color/white"
+            android:shadowRadius="@dimen/textBorder"
+            android:textStyle="bold"
+            android:text="@string/score"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:shadowColor="@color/white"
+        android:shadowRadius="@dimen/textBorder"
+        android:text="@string/tap_to_start"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_text" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/arrow_up"
+        android:layout_width="@dimen/arrow_width"
+        android:layout_height="@dimen/arrow_height"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_arrow_up"
+        android:contentDescription="@string/arrow_up" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/arrow_left"
+            android:layout_width="@dimen/arrow_height"
+            android:layout_height="@dimen/arrow_width"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/custom_arrow_left"
+            android:contentDescription="@string/arrow_left" />
+
+        <ImageButton
+            android:id="@+id/arrow_right"
+            android:layout_width="@dimen/arrow_height"
+            android:layout_height="@dimen/arrow_width"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/custom_arrow_right"
+            android:contentDescription="@string/arrow_right" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/arrow_down"
+        android:layout_width="@dimen/arrow_width"
+        android:layout_height="@dimen/arrow_height"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_arrow_down"
+        android:contentDescription="@string/arrow_down" />
+
+</LinearLayout>

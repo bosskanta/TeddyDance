@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="arrow_width">60dip</dimen>
+    <dimen name="arrow_height">80dip</dimen>
+    <dimen name="small_text">15sp</dimen>
+    <dimen name="normal_text">25sp</dimen>
+    <dimen name="large_text">28sp</dimen>
+    <dimen name="huge_text">50sp</dimen>
+    <dimen name="textBorder">6</dimen>
+    <dimen name="large_textBorder">10</dimen>
+    <dimen name="huge_textBorder">20</dimen>
+
+</resources>
